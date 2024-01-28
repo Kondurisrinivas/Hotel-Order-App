@@ -1,38 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('C:\Users\srinu\Downloads\resta.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  background-color: rgba(255, 255, 255, 0.5); /* Light background for the form */
+  border-radius: 8px;
+  padding: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  color: antiquewhite;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #3498db;
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #2980b9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.orders-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.orders-container > div {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for order container */
+}
+
+.orders-container h2 {
+  background-color: #3498db;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.no-orders {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
 }
