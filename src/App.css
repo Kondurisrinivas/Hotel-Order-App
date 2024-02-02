@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('C:\Users\srinu\Downloads\resta.jpg'); /* Replace with your image path */
+  background-image: url('C:\Users\srinu\Downloads\resta.jpg'); 
   background-size: cover;
   background-position: center;
   font-family: 'Arial', sans-serif;
@@ -14,7 +14,7 @@ body {
 }
 
 form {
-  background-color: rgba(255, 255, 255, 0.5); /* Light background for the form */
+  background-color: rgba(255, 255, 255, 0.5); 
   border-radius: 8px;
   padding: 20px;
   display: inline-block;
@@ -59,7 +59,7 @@ button:hover {
   border-radius: 8px;
   padding: 20px;
   margin: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Light background for order container */
+  background-color: rgba(255, 255, 255, 0.8); 
 }
 
 .orders-container h2 {
