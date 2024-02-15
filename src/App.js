@@ -63,6 +63,7 @@ const App = () => {
 
   const handleDeleteOrder = (roomNo, index) => {
     setOrders((prevOrders) => {
+      const i=0;
       const updatedOrders = { ...prevOrders };
       updatedOrders[roomNo] = updatedOrders[roomNo].filter((_, i) => i !== index);
       return updatedOrders;
